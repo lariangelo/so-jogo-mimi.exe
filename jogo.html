@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mimi.exe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ajude a Mimi</h2>
+        <div id="game">
+            <div id="question-container"></div>
+            <button id="next-btn" class="hidden">Próxima Fase</button>
+        </div>
+
+        <div id="cpu-container">
+            <br>
+            <h2 class="h2">whiskas</h2>
+            <div id="pieces"></div>
+        </div>
+
+        <div id="end-screen" class="hidden">
+            <h2>Parabéns!</h2>
+        </div>
+    </div>
+
+    <img src="imagens/miau.png" alt="Miau animado" id="miauMascote" class="hidden">
+    <div id="miauMensagem" class="hidden"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mimi.exe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conheça a Mimi </h1>
+        <img src="imagens/gato.png" alt="Mimi curioso" class="miau-img">
+        <p class="miau-txt">
+            Oi, eu sou a Mimi!<br>
+            Uma gata curiosa que sempre quis saber como o computador consegue fazer tanta coisa, abrir programas, guardar arquivos, rodar jogos, e até me deixar ver vídeos de outros gatos na internet! <br>
+            Ontem a noite eu estava cochilando em cima do teclado da minha humana e acabei apertando umas teclas... <b>e puff!</b> de repente acordei dentro do computador!<br>
+            Agora eu preciso explorar esse mundo digital pra entender como tudo aqui funciona e voltar pra minha humana!
+            Em cada fase, você vai me ajudar a descobrir os segredos escondidos do sistema.<br>
+            <b>Vamos juntos nessa missão?</b><br><br>
+            <i>(Obs: SO = Sistema Operacional e E/S = Entrada e Saída)</i>
+
+        </p>
+        <button id="startBtn">Começar a Jornada</button>
+    </div>
+
+    <script>
+        const startBtn = document.getElementById("startBtn");
+
+        startBtn.addEventListener("click", () => {
+        document.body.style.transition = "opacity 0.8s ease";
+        document.body.style.opacity = "0"; // dá o fade-out
+
+        setTimeout(() => {
+            window.location.href = "jogo.html";
+        }, 800); // espera o fade acabar antes de mudar de página
+        });
+    </script>
+</body>
+</html>

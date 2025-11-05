@@ -1,0 +1,191 @@
+body {
+    font-family: Rockwell;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+button {
+    background-color: #aeedff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 25px 10px;
+    font-family: Rockwell;
+    font-size: medium;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+
+#question-container {
+    margin-top: 30px;
+    width: 126%;
+    text-align: center;
+    margin-left: -13%;
+}
+
+
+.option {
+    display: block;
+    background-color: #f5f5f5;
+    border: 2px solid #dadedd;
+    padding: 10px;
+    margin: 8px auto;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background-color: #aeedff;
+}
+
+#cpu-container {
+    margin-top: 30px;
+}
+
+
+.unlock-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.unlock-container .piece-img {
+    width: 200px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+#pieces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+#pieces .piece-img {
+    width: 100px; 
+    height: auto;
+}
+.miau-img
+{
+    width: 50%;
+    margin: 10px 0;
+    animation: float 2s ease-in-out infinite;
+}
+
+.miau-txt
+{
+    text-align: center;
+    width: 200%; 
+    margin: 0 auto;
+    font-size: 20px;
+    margin-left: -50%;
+    letter-spacing: 1px;
+    line-height: 27px;
+    font-family: Rockwell;
+
+}
+
+@keyframes float
+{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#miauMascote
+{
+    position: fixed;
+    bottom: 50px;       
+    right: 25%;         
+    transform: translate(0, 0); 
+    width: 180px;       
+    opacity: 0;
+    transition: all 0.8s ease;
+    z-index: 1000;
+}
+
+#miauMensagem
+{
+    position: fixed;
+    bottom: 250px;      
+    right: 20%;         
+    transform: translate(0, 0); 
+    background: #aeedff;
+    color: #000000;
+    padding: 15px 25px; 
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 20px;    
+    opacity: 0;
+    transition: all 0.8s ease;
+    z-index: 999;
+}
+
+#miauMascote.show
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#miauMensagem.show
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden
+{
+    display: none;
+}
+
+#question-container p {
+    font-size: 20px; 
+    line-height: 28px;
+}
+
+#question-container h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+.h2
+{
+    font-weight: bold;
+    font-size: 20px; 
+}
+
